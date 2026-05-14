@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <!-- LOADER -->
+ <div id="preloader">
+  <div class="loader-content">
+    <h1>Nanak Boutique</h1>
+    <div class="loader"></div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<header class="header">
+    <nav class="navbar">
+      <div class="logo">Nanak<span>Boutique</span></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#products">Collection</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+<!-- SERVICES SECTION -->
+<section class="services">
+
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-subtitle">Crafted with love, tradition & perfection</p>
+
+  <div class="service-grid">
+
+    <div class="service-card" onclick="openGallery('embroidery')">
+  <img src="images/embrodery.jpg">
+  <h3>Hand Embroidery</h3>
+</div>
+
+
+<div class="service-card" onclick="openGallery('stitching')">
+  <img src="images/stiching.jpg">
+  <h3>Stitching</h3>
+</div>
+
+<div class="service-card" onclick="openGallery('custom')">
+  <img src="images/coustom.jpg">
+  <h3>Custom Design</h3>
+</div>
+  </div>
+
+</section>
+<a href="https://instagram.com/nanakboutique26" target="_blank" rel="noopener noreferrer" class="instagram" id="instaBtn">
+  <i class="fab fa-instagram"></i>
+</a>
+
+<footer class="footer" id="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-box brand reveal reveal-up">
+      <h2>Nanak Boutique</h2>
+      <p>Luxury Punjabi suits designed with elegance, tradition, and modern style.</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box reveal reveal-up">
+      <h3>Explore</h3>
+      <ul>
+        <li ><a href="#">Home</a></li>
+        <li ><a href="#">Collection</a></li>
+        <li ><a href="#">Our Work</a></li>
+        <li ><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-bottom reveal reveal-up">
+      <h3>Contact</h3>
+      <p>📍  Ludhiana,Punjab,India</p>
+      <p>📞 +91 00000 00000</p>
+      <p>✉️ nanakboutique499@gmail.com</p>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-bottom reveal reveal-up">
+      <h3>Stay Updated</h3>
+      <form class="newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">→</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://instagram.com/nanakboutique26"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LINE -->
+  <div class="footer-line"></div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p >© 2026 Nanak Boutique | Designed with ❤️</p>
+  </div>
+
+</footer>
+
+
+<div id="popup" class="popup">
+  <span class="close" onclick="closeGallery()">×</span>
+
+  <div class="popup-content" id="popup-content">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
